@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f1117;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+
+
+header {
+    min-height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+header > p:first-of-type {
+    font-size: 24px;
+    color: #8ab4f8;
+    margin-bottom: 20px;
+}
+
+header > p:last-of-type {
+    max-width: 600px;
+    color: #a7a7a7;
+}
+
+section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+section h2,
+footer h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    max-width: 700px;
+    margin: 0 auto 15px;
+    color: #b5b5b5;
+}
+
+#projects {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+#projects > h2 {
+    grid-column: 1 / -1;
+}
+
+.project {
+    background: #181b24;
+
+    border: 1px solid #292d38;
+    border-radius: 16px;
+
+    padding: 25px;
+
+    transition: transform 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-6px);
+    border-color: #8ab4f8;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.project img {
+    width: 100%;
+    max-height: 400px;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+
+    margin-bottom: 20px;
+
+    background: #0b0d12;
+}
+
+.project p {
+    color: #a7a7a7;
+    margin-bottom: 20px;
+}
+
+.project button {
+    border: none;
+
+    background: #8ab4f8;
+    color: #0f1117;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease,
+                opacity 0.2s ease;
+}
+
+.project button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+
+footer {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    border-top: 1px solid #292d38;
+
+    color: #888;
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 44px;
+    }
+
+    header > p:first-of-type {
+        font-size: 20px;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+    }
+
+    section h2,
+    footer h2 {
+        font-size: 30px;
+    }
+}
