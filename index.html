@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mykhailo Pop — Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Головний екран -->
+    <header>
+        <h1>Misha Pop</h1>
+        <p>Junior Developer</p>
+
+        <p>
+            Створюю вебсайти, Telegram та Discord-ботів
+            і невеликі програмні проєкти.
+        </p>
+    </header>
+
+
+    <!-- Про мене -->
+    <section id="about">
+        <h2>Про мене</h2>
+
+        <p>
+            Початківець у сфері IT розвиваю свої
+            навички програмування, веброзробки та створення ботів. Навчаюсь в університеті.
+        </p>
+
+        <p>
+            Працюю з HTML, CSS, JavaScript, Python та іншими
+            технологіями.
+        </p>
+    </section>
+
+
+    <!-- Мої роботи -->
+    <section id="projects">
+
+        <h2>Мої роботи</h2>
+
+
+        <!-- Telegram Bot -->
+        <div class="project">
+
+            <h3>Telegram Movie Bot</h3>
+
+            <img src="images/tgpng.png"
+                 alt="Telegram Movie Bot">
+
+            <p>
+                Telegram-бот для рекомендації фільмів.
+                Бот випадковим чином обирає фільм із власної
+                бази та надає користувачу його назву,
+                рейтинг і жанр.
+            </p>
+
+            <div class="movie-demo">
+
+    <h4>🎬 Random Movie</h4>
+
+    <div id="telegram-result" class="movie-result">
+        <p>Натисни кнопку, щоб отримати рекомендацію</p>
+    </div>
+
+    <button onclick="showRandomMovie('telegram')">
+        🎬 Get movie
+    </button>
+
+</div>
+
+        </div>
+
+
+        <!-- Discord Bot -->
+        <div class="project">
+
+            <h3>Discord Movie Bot</h3>
+
+            <img src="images/discordpng.png"
+                 alt="Discord Movie Bot">
+
+            <p>
+                Discord-бот із аналогічним функціоналом.
+                Користувач може отримати випадкову рекомендацію
+                фільму одним натисканням.
+            </p>
+
+            <div class="movie-demo">
+
+    <h4>🎬 Random Movie</h4>
+
+    <div id="discord-result" class="movie-result">
+        <p>Натисни кнопку, щоб отримати рекомендацію</p>
+    </div>
+
+    <button onclick="showRandomMovie('discord')">
+        🎬 Get movie
+    </button>
+
+</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Контакти -->
+    <footer>
+
+        <h2>Контакти</h2>
+
+
+<p>
+    <a href="https://github.com/dntjey" target="_blank">
+        GitHub
+    </a>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
